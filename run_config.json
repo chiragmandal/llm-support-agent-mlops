@@ -1,0 +1,14 @@
+{
+  "qdrant_url": "http://localhost:6333",
+  "qdrant_collection": "support_kb",
+  "embed_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "chunk_size_chars": 1100,
+  "chunk_overlap_chars": 180,
+  "ollama_url": "http://localhost:11434",
+  "ollama_model": "llama3.1",
+  "gate_thresholds": {
+    "citation_rate_min": 0.9,
+    "groundedness_avg_min": 0.55,
+    "latency_p95_ms_max": 20000
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "metrics": {
+    "n": 4,
+    "citation_rate": 1.0,
+    "refusal_correctness": 1.0,
+    "groundedness_avg": 0.6145977228879929,
+    "keyword_coverage_avg": 0.75,
+    "latency_p50_ms": 10338,
+    "latency_p95_ms": 15906
+  },
+  "samples": [
+    {
+      "ticket": "I cannot reset my password. It says token expired.",
+      "latency_ms": 15906,
+      "groundedness_proxy": 0.5135124921798706,
+      "keyword_coverage": 1.0,
+      "answer": "We're happy to help you with your password reset issue!\n\nIt looks like your token has expired, which can happen after 15 minutes [doc:password_reset.md#0]. To get a new one, could you please request a new reset email from the login page? Also, just to confirm, are you using the latest link provided in that email?\n\nIf you're still having trouble, we'd like to gather more information to assist you better. Could you provide us with your account email and approximate time when you tried to reset your password? A screenshot of the error message would also be helpful [doc:password_reset.md#0]."
+    },
+    {
+      "ticket": "I want a refund for my annual plan, purchased 10 days ago. I barely used it.",
+      "latency_ms": 10338,
+      "groundedness_proxy": 0.7002667784690857,
+      "keyword_coverage": 0.6666666666666666,
+      "answer": "Based on our billing and refund policy [doc:billing_refund.md#0], I'd be happy to assist you with your request.\n\nTo process your refund, could you please provide me with the following information:\n\n1. Your order ID\n2. The email address associated with your account\n\nOnce I have this information, I'll verify your eligibility for a refund and confirm that it will be processed back to the original payment method. Refunds typically take 5-10 business days to process depending on your bank's processing time [doc:billing_refund.md#0].\n\nPlease note that since you mentioned you barely used your annual "
+    },
+    {
+      "ticket": "My reset link doesn't work and I tried twice.",
+      "latency_ms": 10482,
+      "groundedness_proxy": 0.5349999666213989,
+      "keyword_coverage": 0.3333333333333333,
+      "answer": "I'd be happy to help you with your password reset issue. Since you've already tried twice, let's try a few more things to troubleshoot:\n\n1. Are you using the latest email link? Sometimes older links can expire or become invalid [doc:password_reset.md#0].\n2. Can you please confirm that you're trying to reset your password within 15 minutes of receiving the initial email [doc:password_reset.md#0]?\n3. If neither of these solutions work, could you provide me with your account email and an approximate time when you tried to reset your password? This will help me better assist you.\n\nIf none of these"
+    },
+    {
+      "ticket": "Refund for monthly plan bought yesterday, used it heavily though.",
+      "latency_ms": 9674,
+      "groundedness_proxy": 0.7096116542816162,
+      "keyword_coverage": 1.0,
+      "answer": "Thank you for contacting us about your refund request. I'd be happy to help.\n\nHowever, based on our billing and refund policy [doc:billing_refund.md#0], I need a bit more information from you. Can you please provide me with the following details:\n\n1. Your order ID\n2. Your account email\n\nOnce I have this information, I can verify your eligibility for a refund and guide you through the process.\n\nNote that according to our policy, refunds are eligible for monthly plans if usage is under 20% within 7 days of first purchase [doc:billing_refund.md#0]. Since you mentioned using it heavily yesterday ("
+    }
+  ]
+}

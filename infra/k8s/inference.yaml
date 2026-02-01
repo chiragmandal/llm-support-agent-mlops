@@ -1,0 +1,43 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: inference-api
+  namespace: llm
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: inference-api
+  template:
+    metadata:
+      labels:
+        app: inference-api
+    spec:
+      containers:
+        - name: inference-api
+          image: inference-api:0.1
+          imagePullPolicy: IfNotPresent
+          env:
+            - name: QDRANT_URL
+              value: "http://qdrant:6333"
+            - name: QDRANT_COLLECTION
+              value: "support_kb"
+            - name: OLLAMA_URL
+              value: "http://host.lima.internal:11434"
+            - name: OLLAMA_MODEL
+              value: "mistral"
+          ports:
+            - containerPort: 8000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: inference-api
+  namespace: llm
+spec:
+  selector:
+    app: inference-api
+  ports:
+    - name: http
+      port: 8000
+      targetPort: 8000

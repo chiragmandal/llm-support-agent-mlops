@@ -1,0 +1,4 @@
+{"ticket":"I cannot reset my password. It says token expired.","must_cite":true,"expected_keywords":["token","15 minutes","new reset email"]}
+{"ticket":"I want a refund for my annual plan, purchased 10 days ago. I barely used it.","must_cite":true,"expected_keywords":["14 days","under 10%","order ID"]}
+{"ticket":"My reset link doesn't work and I tried twice.","must_cite":true,"expected_keywords":["new reset email","latest email link","older links invalidate"]}
+{"ticket":"Refund for monthly plan bought yesterday, used it heavily though.","must_cite":true,"expected_keywords":["7 days","under 20%"]}

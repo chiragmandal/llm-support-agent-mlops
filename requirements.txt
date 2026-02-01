@@ -1,0 +1,11 @@
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+pydantic==2.8.2
+requests==2.32.3
+
+qdrant-client==1.10.1
+sentence-transformers==3.0.1
+numpy==1.26.4
+
+zenml==0.70.0
+mlflow==2.16.2
