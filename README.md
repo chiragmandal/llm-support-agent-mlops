@@ -18,7 +18,7 @@ A **free, local-first** end-to-end MLOps project that builds a **RAG-based custo
 
 ---
 
-## What Changed and Why — Senior MLOps Review (v2)
+## What Changed and Why?
 
 The following improvements were made across four dimensions: **performance**, **accuracy**, **data security**, and **code quality**. Each change includes the rationale so you can evaluate the tradeoff yourself.
 
@@ -337,7 +337,7 @@ Response includes:
 
 ## Roadmap / Known Limitations
 
-The following improvements are out of scope for a 2-hour sprint but are the natural next steps:
+The following improvements are the natural next steps:
 
 - **Semantic response cache** (Redis + embedding similarity): identical or near-identical tickets should not hit the embedding model + Qdrant + Ollama on every call
 - **Streaming responses** (SSE): users currently wait for the full completion before seeing any output
