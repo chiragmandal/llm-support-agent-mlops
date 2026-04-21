@@ -1,9 +1,26 @@
+# Python
 .venv/
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+
+# Environment / secrets — NEVER commit these
+.env
+.env.local
+.env.*.local
+
+# MLflow
 mlruns/
 mlflow.db
+
+# ZenML
 .zen/
+
+# macOS
 .DS_Store
+
+# Build artifacts
 dist/
 build/
+*.egg-info/
